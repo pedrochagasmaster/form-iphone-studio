@@ -1,0 +1,8 @@
+Apple iPhone 15 Pro Max Black by polyman
+https://sketchfab.com/Polyman_3D
+https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
+Licensed under Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+GLB distribution source: https://github.com/adrianhajdin/iphone/blob/main/public/models/scene.glb
+Adaptations: material replacement, display UV mapping, runtime normalization, reflections, and screenshot composition.
+Apple and iPhone are trademarks of Apple Inc. This independent editor is not affiliated with Apple.

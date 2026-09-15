@@ -1,0 +1,43 @@
+{
+  "name": "form-iphone-studio",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node ./scripts/prepare-assets.mjs && tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "cli": "node ./bin/form-studio.mjs",
+    "validate": "node ./scripts/check-model.mjs && node ./scripts/check-screen-regressions.mjs && node ./scripts/check-cli.mjs",
+    "postinstall": "node ./scripts/prepare-assets.mjs",
+    "prepare:assets": "node ./scripts/prepare-assets.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slider": "^1.3.6",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.3.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "@use-gesture/react": "^10.3.1",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.468.0",
+    "postprocessing": "^6.37.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "^0.180.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.2.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "playwright": "^1.55.0",
+    "typescript": "^5.9.0",
+    "vite": "^6.3.0"
+  },
+  "bin": {
+    "form-studio": "./bin/form-studio.mjs"
+  }
+}

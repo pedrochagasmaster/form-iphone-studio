@@ -1,0 +1,2 @@
+import {useId} from 'react';
+export default function SegmentedControl<T extends string|number>({label,value,options,onChange}:{label:string;value:T;options:{value:T;label:string}[];onChange:(v:T)=>void}){const id=useId();return <div className="controlGroup"><span id={id} className="controlLabel">{label}</span><div className="segments" role="group" aria-labelledby={id}>{options.map(o=><button key={o.value} aria-pressed={value===o.value} className={value===o.value?'selected':''} onClick={()=>onChange(o.value)}>{o.label}</button>)}</div></div>}

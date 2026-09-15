@@ -1,0 +1,2 @@
+import {useEditorStore} from '../../store/editorStore';
+export default function ShadowPlane(){const enabled=useEditorStore(s=>s.background.ground);const opacity=useEditorStore(s=>s.lighting.shadowOpacity);return enabled?<mesh rotation={[-Math.PI/2,0,0]} position={[0,-1.62,0]} receiveShadow><planeGeometry args={[200,200]}/><shadowMaterial transparent opacity={opacity} depthWrite={false}/></mesh>:null}

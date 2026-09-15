@@ -1,0 +1,21 @@
+{
+  "camera": {
+    "Front": {"camera": {"positionY": 0}, "device": {"rotation": [0, 0, 0]}},
+    "Three Quarter": {"camera": {}, "device": {}},
+    "Close Up": {"camera": {"distance": 4.6, "fov": 32}, "device": {"rotation": [-0.12, -0.32, -0.08], "position": [0, -0.35, 0]}},
+    "Wide": {"camera": {"distance": 8}, "device": {"rotation": [-0.1, -0.35, -0.12]}},
+    "Low Angle": {"camera": {"positionY": -1.4, "targetY": 0.1}, "device": {"rotation": [0.05, -0.36, -0.05]}},
+    "Isometric": {"camera": {"fov": 16, "distance": 13}, "device": {"rotation": [-0.38, -0.65, -0.2]}},
+    "App Store": {"camera": {"positionY": 0, "distance": 6.6}, "device": {"rotation": [0, 0, 0], "position": [0, -0.05, 0]}}
+  },
+  "lighting": {
+    "Soft Studio": {},
+    "Bright Product": {"keyIntensity": 3.7, "fillIntensity": 1.6, "environmentIntensity": 1.3, "rimIntensity": 1.5, "temperature": "#ffffff"},
+    "Apple-style": {"keyIntensity": 2.8, "keyAzimuth": 70, "keyElevation": 60, "fillIntensity": 0.5, "rimIntensity": 2, "environmentIntensity": 1.1, "environment": "strip"},
+    "Moody": {"keyIntensity": 0.8, "keyAzimuth": 85, "keyElevation": 25, "fillIntensity": 0.12, "environmentIntensity": 0.25, "rimIntensity": 2, "temperature": "#b6cbff"},
+    "Warm": {"keyIntensity": 2.6, "temperature": "#ffd19b", "environmentIntensity": 0.7},
+    "Cool": {"keyIntensity": 2.7, "temperature": "#b6d9ff", "keyAzimuth": -45},
+    "High Contrast": {"keyIntensity": 4, "keyAzimuth": 80, "fillIntensity": 0.05, "environmentIntensity": 0.25, "shadowOpacity": 0.4},
+    "Rim Light": {"keyIntensity": 0.7, "fillIntensity": 0.3, "rimIntensity": 4, "rimAzimuth": 165, "environmentIntensity": 0.4, "environment": "strip"}
+  }
+}

@@ -1,0 +1,5 @@
+// Dimensions: https://support.apple.com/en-us/111831 and /111828.
+export const deviceSpecs={proMax:{width:76.7,height:159.9,depth:8.25,screenWidth:1290,screenHeight:2796},iphone15:{width:71.6,height:147.6,depth:7.8,screenWidth:1179,screenHeight:2556}} as const;
+export function screenAspect(variant:keyof typeof deviceSpecs){const s=deviceSpecs[variant];return s.screenWidth/s.screenHeight}
+export function fitUV(sourceAspect:number,displayAspect:number,mode:'fill'|'fit',zoom:number,x:number,y:number){let width=1,height=1;if(mode==='fill'){if(sourceAspect>displayAspect)width=displayAspect/sourceAspect;else height=sourceAspect/displayAspect}else{if(sourceAspect>displayAspect)height=sourceAspect/displayAspect;else width=displayAspect/sourceAspect}width/=zoom;height/=zoom;return [width,height,(1-width)/2-x*Math.abs(1-width)/2,(1-height)/2+y*Math.abs(1-height)/2] as const}
+export function outputDimensions(ratio:string,resolution:number){const [a,b]=ratio.split(':').map(Number);return {width:Math.round(resolution*a/Math.max(a,b)),height:Math.round(resolution*b/Math.max(a,b))}}

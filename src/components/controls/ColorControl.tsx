@@ -1,0 +1,1 @@
+export default function ColorControl({label,value,onChange}:{label:string;value:string;onChange:(v:string)=>void}){return <label className="colorControl"><span>{label}</span><span className="colorValue">{value.toUpperCase()}<input aria-label={label} type="color" value={value} onChange={e=>onChange(e.target.value)}/></span></label>}
